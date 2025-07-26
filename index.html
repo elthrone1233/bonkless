@@ -3653,6 +3653,74 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+
+
+
+<div class="image-gallary-section">
+	<div class="card">
+		<img src="/1.jpg" alt="" />
+	</div>
+	<div class="card">
+		<img src="/2.jpg" alt="" />
+	</div>
+	<div class="card">
+		<img src="/3.jpg" alt="" />
+	</div>
+	<div class="card">
+		<img src="/4.jpg" alt="" />
+	</div>    
+	<div class="card">
+		<img src="/5.jpg" alt="" />
+	</div>
+	<div class="card">
+		<img src="/6.jpg" alt="" />
+	</div>
+</div>
+
+<style>
+.image-gallary-section {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    > :not(:hover) {
+      opacity: 0.4;
+    }
+  }
+
+  .card {
+    transition: transform 0.5s ease;
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+	border: 5px solid #e9b300;
+
+    &:hover {
+      cursor: zoom-in;
+      transform: scale(1.1);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+</style>
+
+
+
+
+
+
                                                 </div>
                                             </div>
                                         </section>
